@@ -1,24 +1,14 @@
-name = 'Кузя'
-age = 1
-period = 2
+person_name = 'Max'
+print(type(person_name))
 
-print('Попугайчик')
-print(name)
-print('в')
-print(age)
-print('года')
-print('научился говорить')
-print('свое имя')
-print(name)
+age = 30
+print(type(age))
 
-print()
+period = 3.2
+print(type(period))
 
-print('Через')
-print(period)
-print('года')
-print('Он научился говорить')
-print('Сколько ему лет')
+is_good = True
+print(type(is_good))
 
-print()
-
-print(age + period)
+person = None
+print(type(person))
