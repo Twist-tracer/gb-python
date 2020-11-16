@@ -1,11 +1,12 @@
-birthday_year = '1988'
-print(type(birthday_year))
+name = 'Кеша'
+age = 2
 
-period = 20
-print(type(period))
+print(name, age, sep='/')
+print(name, age, sep='/;h')
 
-age = int(birthday_year) + period
+print(name)
 print(age)
 
-some_str = birthday_year + str(period)
-print(some_str)
+print('----------->')
+print(name, end=';')
+print(age, end=';')
