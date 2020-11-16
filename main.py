@@ -1,8 +1,6 @@
-name = input('Как вас зовут?: ')
-print(type(name))
+age = int(input('Сколько вам лет?: '))
+period = 20
 
-age = input('Сколько вам лет?: ')
-print(type(age))
+age_period = age + period
 
-is_love = input('Вы любите python: ')
-print(type(is_love))
+print('Через', period, 'вам будет', age_period)
