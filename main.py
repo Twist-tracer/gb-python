@@ -1,12 +1,5 @@
-name = 'Кеша'
-age = 2
+# result = input()
+# print('Пользователь ввел', result)
 
-print(name, age, sep='/')
-print(name, age, sep='/;h')
-
-print(name)
-print(age)
-
-print('----------->')
-print(name, end=';')
-print(age, end=';')
+name = input('Как тебя зовут?: ')
+print('Привет', name)
