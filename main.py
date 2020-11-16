@@ -1,5 +1,8 @@
-# result = input()
-# print('Пользователь ввел', result)
+name = input('Как вас зовут?: ')
+print(type(name))
 
-name = input('Как тебя зовут?: ')
-print('Привет', name)
+age = input('Сколько вам лет?: ')
+print(type(age))
+
+is_love = input('Вы любите python: ')
+print(type(is_love))
