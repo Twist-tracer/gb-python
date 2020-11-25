@@ -1,13 +1,13 @@
-while True:
-    number = int(input('Введите число больше 0, но меньше 10: '))
-    if (number > 0) and (number < 10):
-        break
-    elif number <= 0:
-        print('Ваше число должно быть больше 0')
-    else:
-        print('Ваше число должно быть меньше 10')
+firstname = input('Ваше имя: ')
+lastname = input('Ваша фамилия: ')
+age = int(input('Ваш возраст: '))
+weight = int(input('Ваш вес: '))
 
-
-number = number ** 2
-
-print('Ваше число в квадрате будет ' + str(number))
+if (age < 30) and ((weight >= 50) and (weight < 120)):
+    print(firstname, lastname + ',', age, 'год,', 'вес', weight, '- хорошее состояние')
+elif (age > 40) and ((weight < 50) or (weight > 120)):
+    print(firstname, lastname + ',', age, 'год,', 'вес', weight, '- следует обратится к врачу!')
+elif (age > 30) and ((weight < 50) or (weight > 120)):
+    print(firstname, lastname + ',', age, 'год,', 'вес', weight, '- следует заняться собой')
+else:
+    print('Пациент на мой вкус и полет фантазии')
