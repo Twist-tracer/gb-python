@@ -1,6 +1,5 @@
-age = int(input('Сколько вам лет?: '))
-period = 20
+number = int(input('Введите число: '))
 
-age_period = age + period
+number += 2
 
-print('Через', period, 'вам будет', age_period)
+print('Ваше число + 2 будет ' + str(number))
