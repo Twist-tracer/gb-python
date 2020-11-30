@@ -1,17 +1,16 @@
-date = '02.11.2000'
+my_list_1 = [2, 2, 5, 12, 8, 2, 12]
+my_set_1 = set(my_list_1)
 
-days = {
-    '01': 'первое',
-    '02': 'второе',
-    '03': 'третье',
-}
+result = []
+for set_item in my_set_1:
+    set_items_from_list = []
 
-months = {
-    '09': 'сентября',
-    '10': 'октября',
-    '11': 'ноября',
-}
+    for list_item in my_list_1:
+        if set_item == list_item:
+            set_items_from_list.append(list_item)
 
-date_parts = date.split('.')
+    if len(set_items_from_list) == 1:
+        result.append(set_item)
 
-print(days[date_parts[0]], months[date_parts[1]], date_parts[2], 'года')
+
+print(result)
