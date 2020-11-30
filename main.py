@@ -1,6 +1,17 @@
-my_list_1 = [2, 5, 8, 2, 12, 12, 4]
-my_list_2 = [2, 7, 12, 3]
+date = '02.11.2000'
 
-result = list(set(my_list_1) - set(my_list_2))
+days = {
+    '01': 'первое',
+    '02': 'второе',
+    '03': 'третье',
+}
 
-print(result)
+months = {
+    '09': 'сентября',
+    '10': 'октября',
+    '11': 'ноября',
+}
+
+date_parts = date.split('.')
+
+print(days[date_parts[0]], months[date_parts[1]], date_parts[2], 'года')
