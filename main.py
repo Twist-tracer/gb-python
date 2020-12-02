@@ -6,20 +6,21 @@ player = {
 }
 
 enemy = {
-    'name': 'Бот',
+    'name': input('Имя врага: '),
     'health': 100,
     'damage': 51,
     'armor': 1.2,
 }
 
 
-def attack(person1: dict, person2: dict):
-    def damage():
-        return person1['damage'] / person2['armor']
+def get_damage(damage, armor):
+    return damage / armor
 
-    person2['health'] -= damage()
 
-    print(person1, person2)
+def attack(unit: dict, target: dict):
+    target['health'] -= get_damage(unit['damage'], target['armor'])
 
 
 attack(player, enemy)
+
+print(enemy)
