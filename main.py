@@ -1,4 +1,4 @@
-def person(name, age, city):
-    return f'{name}, {age} год(а), проживает в городе {city[0].upper()}{city[1:]}'
+def max_number(num1, num2, num3):
+    return max([int(num1), int(num2), int(num3)])
 
-print(person('Василий', 21, 'москва'))
+print(max_number(14, 98, 43))
