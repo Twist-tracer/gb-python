@@ -1,26 +1,12 @@
-player = {
-    'name': input('Ваше имя: '),
-    'health': 100,
-    'damage': 32,
-    'armor': 1.4,
-}
+# import fs_manager as fs
+# import list_manager as l
+from fs_manager import create_dirs, remove_dirs
+from list_manager import get_rand_item
 
-enemy = {
-    'name': input('Имя врага: '),
-    'health': 100,
-    'damage': 51,
-    'armor': 1.2,
-}
+# fs.create_dirs()
+# fs.remove_dirs()
+# print(l.get_rand_item([1, 2, 3, 4]))
 
-
-def get_damage(damage, armor):
-    return damage / armor
-
-
-def attack(unit: dict, target: dict):
-    target['health'] -= get_damage(unit['damage'], target['armor'])
-
-
-attack(player, enemy)
-
-print(enemy)
+# create_dirs()
+# remove_dirs()
+print(get_rand_item([1, 2, 3, 4]))
