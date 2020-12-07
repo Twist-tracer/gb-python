@@ -1,12 +1,22 @@
-# import fs_manager as fs
-# import list_manager as l
-from fs_manager import create_dirs, remove_dirs
-from list_manager import get_rand_item
+import json, pickle
 
-# fs.create_dirs()
-# fs.remove_dirs()
-# print(l.get_rand_item([1, 2, 3, 4]))
+my_favourite_group = {
+    'name': 'Г.М.О.',
+    'tracks': ['Последний месяц осени', 'Шапито'],
+    'Albums': [
+        {'name': 'Делать панк-рок', 'year': 2016},
+        {'name': 'Шапито', 'year': 2014}
+   ]
+}
 
-# create_dirs()
-# remove_dirs()
-print(get_rand_item([1, 2, 3, 4]))
+group_json = json.dumps(my_favourite_group)
+group_pickle = pickle.dumps(my_favourite_group)
+
+print(group_json)
+print(group_pickle)
+
+with open('group.json', 'w', encoding='utf-8') as file:
+    json.dump(group_json, file)
+
+with open('group.pickle', 'wb') as file:
+    pickle.dump(group_pickle, file)
