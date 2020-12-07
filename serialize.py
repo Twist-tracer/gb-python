@@ -12,11 +12,11 @@ my_favourite_group = {
 group_json = json.dumps(my_favourite_group)
 group_pickle = pickle.dumps(my_favourite_group)
 
-print(group_json)
-print(group_pickle)
+print(type(group_json), group_json)
+print(type(group_json), group_pickle)
 
 with open('group.json', 'w', encoding='utf-8') as file:
-    json.dump(group_json, file)
+    json.dump(my_favourite_group, file)
 
 with open('group.pickle', 'wb') as file:
-    pickle.dump(group_pickle, file)
+    pickle.dump(my_favourite_group, file)
